@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>HAHA Shop</title>
+
+  <link rel="stylesheet" href="/stylesheets/mana_style.css">
+</head>
+<body>
+  <div id="wrap">
+    <div class ="header">
+      <% include mana_header.ejs %>
+    </div>
+    <hr />
+
+    <div class="content">
+
+      <br>
+        <h3>Worker INSRET</h3>
+        <br>
+        <form method="post">
+        <fieldset>
+          <table>
+            <tr>
+              <td><label>Id : </label></td>
+              <td><input type="text" name="id" /></td>
+            </tr>
+            <tr>
+              <td><label>Password : </label></td>
+              <td><input type="text" name="password" /></td>
+            </tr>
+            <tr>
+              <td><label>Name : </label></td>
+              <td><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+              <td><label>Phone : </label></td>
+              <td><input type="text" name="phone" /></td>
+            </tr>
+            <tr>
+              <td><label>paycheck : </label></td>
+              <td><input type="text" name="paycheck" /></td>
+            </tr>
+          </table>
+          <input type="submit" value="확정" />
+        </fieldset>
+        </form>
+        <br>
+
+    </div>
+
+    <hr />
+    <div class="footer">
+      <% include footer.ejs %>
+    </div>
+  </div>
+</body>
+</html>

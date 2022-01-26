@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>HAHA Shop</title>
+
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div id="wrap">
+    <div class ="header">
+      <% include header.ejs %>
+    </div>
+    <hr />
+
+    <div class="content">
+
+      <br>
+      <h3>MyPage</h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="/cus_mypage_edit/<%= data[0].id %>">정보 수정</a>
+      <br>
+      <div id = "box0">
+        ID : <%= data[0].id %> <br>
+        Password : <%= data[0].password %> <br>
+        Name : <%= data[0].name %> <br>
+        Phone : <%= data[0].phone %> <br>
+        Address : <%= data[0].address %> <br><br>
+      </div>
+      <br>
+
+    </div>
+
+    <hr />
+    <div class="footer">
+      <% include footer.ejs %>
+    </div>
+  </div>
+</body>
+</html>

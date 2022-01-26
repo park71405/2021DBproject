@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>HAHA Shop</title>
+
+  <link rel="stylesheet" href="/stylesheets/mana_style.css">
+</head>
+<body>
+  <div id="wrap">
+    <div class ="header">
+      <% include mana_header.ejs %>
+    </div>
+    <hr />
+
+    <div class="content">
+
+      <br>
+      <h3>Worker List</h3>
+      <br>
+      <a href="/mana_insert_wor">Worker Insert</a>
+      <br><br>
+      <div id = "box5">
+        <table>
+          <tr>
+            <th>Id.</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Paycheck</th>
+            <th></th>
+            <th></th>
+          </tr>
+          <% data.forEach(function(item, index){ %>
+          <tr>
+            <td><%= item.id %></td>
+            <td><%= item.name %></td>
+            <td><%= item.phone %></td>
+            <td><%= item.paycheck %></td>
+            <td><a href="/mana_edit_wor/<%= item.id %>">수정</a></td>
+            <td><a href="/mana_delete_wor/<%= item.id %>">삭제</a></td>
+          </tr>
+          <% }); %>
+        </table>
+      </div>
+      <br>
+
+    </div>
+
+    <hr />
+    <div class="footer">
+      <% include footer.ejs %>
+    </div>
+  </div>
+</body>
+</html>

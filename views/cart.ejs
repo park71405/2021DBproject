@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>HAHA Shop</title>
+
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div id="wrap">
+    <div class ="header">
+      <% include header.ejs %>
+    </div>
+    <hr />
+
+    <div class="content">
+
+      <br>
+      <h3>My Cart</h3>
+      <br>
+      <div id = "box1">
+        <table>
+          <tr>
+            <th></th>
+            <th>상품명</th>
+            <th>가격</th>
+            <th>개수</th>
+            <th></th>
+          </tr>
+          <% data.forEach(function(item, index){ %>
+          <tr>
+            <td><img src="/images/<%= item.product_image %>" width=100px, height=100px /></td>
+            <td><%= item.product_name %></td>
+            <td><%= item.product_price %></td>
+            <td><%= item.amount %></td>
+            <td><a href="/cart_delete/<%= item.cart_id %>">취소</a></td>
+          </tr>
+          <% }); %>
+        </table><br><br>
+        <a href="/buy">구매</a>
+      </div>
+      <br>
+
+    </div>
+
+    <hr />
+    <div class="footer">
+      <% include footer.ejs %>
+    </div>
+  </div>
+</body>
+</html>

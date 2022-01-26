@@ -1,0 +1,104 @@
+*{margin: 0px; padding:0px;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+body {background-color: white;}
+#wrap{
+  width: 1000px; margin: 0 auto;
+  font-size: 21px;
+  color: #5C5F68;
+  text-align;
+}
+.header{
+  width: 1000px; height:120px;
+  background: #E2DCD5;
+
+  position: relative;
+}
+
+#logo{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+#top_menu{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color: #5C5F68;
+  font-size: 18px;
+}
+
+#top_menu a{color: #5C5F68;}
+
+nav{
+  position: absolute;
+  bottom: 10px;
+  left: 250px;
+  font-size: 20px;
+}
+
+nav li{
+  display: inline;
+  margin-left: 30px;
+}
+
+nav li a{color: #5C5F68;}
+
+.content{
+  float: left; width: 1000px; background: #E2DCD5;
+  text-align: center;
+}
+
+#box0{
+  width: 60%;
+  margin: 0 auto;
+}
+a{color: #5C5F68;}
+
+#box1{
+  width: 70%;
+  margin-left: 300px;
+  text-align: center;
+}
+#box1 th,td{padding: 15px;}
+
+#box2{
+  width: 70%;
+  margin-left: 155px;
+  text-align: center;
+}
+#box2 th,td{padding: 3px;}
+
+#box3{
+  width: 70%;
+  margin-left: 195px;
+  text-align: center;
+}
+#box3 th,td{padding: 3px;}
+
+#box4{
+  width: 70%;
+  margin-left: 200px;
+  text-align: center;
+}
+#box4 th,td{padding: 3px;}
+
+fieldset{margin: 0 auto; width: 31%; padding: 10px;}
+
+.footer{
+  clear: both;
+  width: 1000px; height: 100px;
+  background: #E2DCD5;
+  color: #5C5F68;
+  font-size: 16px;
+}
+
+.cc{
+  position: relative;
+  top: 15px; right: 10px;
+  text-align: right;
+}
+
+.footer a{color: #5C5F68;}

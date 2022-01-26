@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>HAHA Shop</title>
+
+  <link rel="stylesheet" href="/stylesheets/wor_style.css">
+</head>
+<body>
+  <div id="wrap">
+    <div class ="header">
+      <% include wor_header.ejs %>
+    </div>
+    <hr />
+
+    <div class="content">
+
+      <br><br>
+      <h3> 직원용 페이지에 접속하기 위해서는 로그인해야 합니다. </h3>
+      <br>
+      <div id="box0">
+      <form method="post">
+         ID : <input type="text" name="login" /><br>
+        Password : <input type="text" name="password" />
+        <input type="submit" name="" value="확인">
+      </form>
+      </div>
+      <br>
+
+    </div>
+
+    <hr />
+    <div class="footer">
+      <% include footer.ejs %>
+    </div>
+  </div>
+</body>
+</html>
